@@ -428,7 +428,22 @@ a {
   pointer-events: none;
 }
 
+@media (max-width: 575.98px) {
 
+  .ghu-navbar .container {
+    position: relative;
+  }
+
+  .ghu-navbar .navbar-toggler {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    z-index: 10;
+  }
+
+}
 
 
 
