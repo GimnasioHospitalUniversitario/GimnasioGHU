@@ -1,0 +1,12 @@
+<meta property="og:url" content="https://TU-DOMINIO...">
+
+<meta property="og:type" content="website">
+
+<meta property="og:title"
+  content="Gimnasio Hospital Universitario UANL | Facultad de Medicina">
+
+<meta property="og:description"
+  content="Área de pesas, entrenamiento funcional y torneos deportivos en el Gimnasio Hospital Universitario UANL.">
+
+<meta property="og:image"
+  content="https://TU-DOMINIO.../img/hero-ghu.jpg">
