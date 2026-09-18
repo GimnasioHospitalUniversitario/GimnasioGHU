@@ -926,30 +926,347 @@ a {
     padding: 25px;
   }
 }
+
+/* =========================================================
+   COMPONENTES UTILIZADOS POR EL HTML ACTUAL
+   ========================================================= */
+
+/* Selector de perfiles */
+.pricing-profile-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 14px;
+}
+
+.pricing-label {
+  color: #fff;
+  font-size: .82rem;
+  font-weight: 800;
+}
+
+.pricing-helper {
+  color: rgba(255,255,255,.42);
+  font-size: .72rem;
+}
+
+/* Resultado de tarifas */
+.pricing-result {
+  margin-top: 24px;
+  padding: 22px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.pricing-result-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.pricing-result-label {
+  display: block;
+  color: rgba(255,255,255,.42);
+  font-size: .65rem;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+
+.pricing-result-head h3 {
+  margin: 5px 0 0;
+  color: #fff;
+  font-size: 1.35rem;
+  font-weight: 900;
+}
+
+.pricing-result-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--ghu-gold-light);
+  font-size: .72rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* Selector restringido / abierto */
+.schedule-selector {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--ghu-border);
+}
+
+.schedule-label {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--ghu-muted);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.schedule-options {
+  display: flex;
+  gap: 7px;
+}
+
+.schedule-btn {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #dcd9e2;
+  border-radius: 9px;
+  background: #fff;
+  color: var(--ghu-muted);
+  font-family: var(--font-body);
+  font-size: .72rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.schedule-btn:hover,
+.schedule-btn.active {
+  background: var(--ghu-purple);
+  border-color: var(--ghu-purple);
+  color: #fff;
+}
+
+/* Horarios */
+.schedule-card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.schedule-card-header .schedule-icon {
+  flex: 0 0 auto;
+  margin-bottom: 0;
+}
+
+.schedule-card-header h3 {
+  margin: 4px 0 0;
+}
+
+.schedule-days {
+  border-top: 1px solid var(--ghu-border);
+}
+
+.schedule-day {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--ghu-border);
+}
+
+.schedule-day span {
+  color: var(--ghu-muted);
+  font-size: .82rem;
+}
+
+.schedule-day strong {
+  font-size: .98rem;
+  text-align: right;
+}
+
+.schedule-day.closed strong {
+  color: var(--ghu-muted);
+}
+
+.schedule-footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 20px;
+  color: var(--ghu-muted);
+  font-size: .78rem;
+  line-height: 1.5;
+}
+
+.schedule-footer i {
+  flex: 0 0 auto;
+  color: var(--ghu-purple);
+  margin-top: 2px;
+}
+
+.functional-times {
+  display: grid;
+  gap: 12px;
+}
+
+.functional-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--ghu-purple-soft);
+}
+
+.functional-time span {
+  color: var(--ghu-muted);
+  font-size: .82rem;
+}
+
+.functional-time span i {
+  margin-right: 6px;
+  color: var(--ghu-purple);
+}
+
+.functional-time strong {
+  color: var(--ghu-purple);
+  font-size: 1.05rem;
+}
+
+/* Torneos */
+.tournaments-section {
+  padding: 105px 0;
+  background:
+    radial-gradient(circle at 85% 50%, rgba(201,161,59,.14), transparent 30%),
+    var(--ghu-purple-soft);
+}
+
+.tournaments-section h2 {
+  color: var(--ghu-purple-dark);
+  font-size: clamp(2.3rem, 5vw, 4.2rem);
+  font-weight: 900;
+  margin: 12px 0 20px;
+}
+
+.tournaments-lead {
+  max-width: 670px;
+  color: var(--ghu-muted);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.tournament-features {
+  display: grid;
+  gap: 14px;
+}
+
+.tournament-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid var(--ghu-border);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.tournament-feature-icon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: var(--ghu-purple-soft);
+  color: var(--ghu-purple);
+  font-size: 1.2rem;
+}
+
+.tournament-feature h3 {
+  margin: 2px 0 6px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.tournament-feature p {
+  margin: 0;
+  color: var(--ghu-muted);
+  font-size: .84rem;
+  line-height: 1.6;
+}
+
+/* Contacto */
+.contact-link {
+  color: #fff;
+}
+
+.contact-link:hover {
+  color: var(--ghu-gold-light);
+}
+
+.contact-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 76px;
+}
+
+.contact-social-icons a {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: rgba(255,255,255,.08);
+  color: #fff;
+}
+
+.contact-social-icons a:hover {
+  background: rgba(201,161,59,.18);
+  color: var(--ghu-gold-light);
+}
+
 /* =========================================================
    NAVBAR — MOBILE
-   El hamburger queda anclado al encabezado y NO cambia de
-   posición cuando Bootstrap abre/cierra el menú.
+   El botón queda fijo respecto al viewport y NO depende de
+   la altura que adquiere el menú de Bootstrap al abrirse.
    ========================================================= */
+
 @media (max-width: 991.98px) {
-  .ghu-navbar {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    z-index: 1030 !important;
-  }
-
-  .ghu-navbar .container {
-    position: relative;
-  }
-
   .ghu-navbar .navbar-toggler {
-    position: absolute !important;
+    position: fixed !important;
     top: 12px !important;
     right: 12px !important;
-    transform: none !important;
     margin: 0 !important;
-    z-index: 1055 !important;
+    transform: none !important;
+    z-index: 1060 !important;
+  }
+
+  .ghu-navbar .navbar-brand {
+    padding-right: 65px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ghu-navbar .navbar-toggler {
+    top: 12px !important;
+    right: 12px !important;
+  }
+
+  .pricing-profile-head,
+  .pricing-result-head {
+    align-items: flex-start;
+  }
+
+  .schedule-day {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .schedule-day strong {
+    text-align: left;
+  }
+
+  .functional-time {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tournaments-section {
+    padding: 75px 0;
   }
 }
